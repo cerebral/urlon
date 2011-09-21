@@ -1,6 +1,6 @@
 # Vjeux Object Notation
 
-A notation intended to be used in URLs. JSON doesn't really shine for multiple reasons:
+A notation intended to be used in URLs as JSON doesn't really shine for multiple reasons:
 
 - It uses characters that are not usually part of urls such as ```}``` and ```"```. 
     - It fails at being automatically recognized as part of the URL in MSN Messenger.
