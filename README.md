@@ -1,4 +1,4 @@
-### Vjeux Object Notation
+# Vjeux Object Notation
 
 A notation intended to be used in URLs. JSON doesn't really shine for multiple reasons:
 
@@ -9,7 +9,7 @@ A notation intended to be used in URLs. JSON doesn't really shine for multiple r
 
 This is why I developped a new encoding style that is made for URL hash.
 
-# Example
+### Example
 
 ```
 VJON.stringify('{"table":{"achievement":{"column":"instance","ascending":true}}}')
@@ -17,7 +17,7 @@ VJON.stringify('{"table":{"achievement":{"column":"instance","ascending":true}}}
 // Output:     '_table_achievement_column=instance&ascending:true'
 ```
 
-# JSON / VJON Comparison
+## JSON / VJON Comparison
 
 ### Object
 An object starts with an underscore ```_``` and all the fields are separated by ampersand ```&```. It makes it feel really url'ish.
@@ -48,7 +48,7 @@ The prefix typing does not really fit well with the Array syntax. If you can fin
 - VJON: ```#:1&=vjeux&:3```
 
 
-# Todo
+## Todo
 There are few small things left to do:
 
 - Make an escape character for ```=:#_```
