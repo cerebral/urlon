@@ -1,12 +1,11 @@
-
-VJON = {
+URLON = {
 	stringify: function (input) {
 		var str = '';
 
 		if (input instanceof Array) {
 			str += '#';
 			for (var i = 0; i < input.length; ++i) {
-				str += VJON.stringify(input[i]) + '&';
+				str += URLON.stringify(input[i]) + '&';
 			}
 			str = str.substring(0, str.length - 1);
 		}
@@ -14,7 +13,7 @@ VJON = {
 		if (typeof input === 'object') {
 			str += '_';
 			for (var key in input) {
-				str += key + VJON.stringify(input[key]) + '&';
+				str += key + URLON.stringify(input[key]) + '&';
 			}
 			str = str.substring(0, str.length - 1);
 		}
