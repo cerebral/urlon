@@ -1,5 +1,9 @@
 URLON = {
 	stringify: function (input) {
+		// Number or Boolean or Null
+		if (typeof input === 'number' || input === true || input === false || input === null) {
+			return ':' + input;
+		}
 		// Array
 		if (input instanceof Array) {
 			var str = '#';
@@ -15,10 +19,6 @@ URLON = {
 				str += key + URLON.stringify(input[key]) + '&';
 			}
 			return str.substring(0, str.length - 1);
-		}
-		// Number or Boolean
-		if (typeof input === 'number' || input === true || input === false) {
-			return ':' + input;
 		}
 		// String
 		return '=' + input.toString();
