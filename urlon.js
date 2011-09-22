@@ -8,7 +8,7 @@ URLON = {
 		if (input instanceof Array) {
 			var str = '#';
 			for (var i = 0; i < input.length; ++i) {
-				str += URLON.stringify(input[i]) + '&';
+				str += URLON.stringify(input[i]) + ',';
 			}
 			return str.substring(0, str.length - 1);
 		}
@@ -30,7 +30,7 @@ URLON = {
 		function read() {
 			var token = '';
 			for (; pos !== str.length; ++pos) {
-				if (str[pos].match(/[=:&#_]/)) {
+				if (str[pos].match(/[=:&#_,]/)) {
 					break;
 				}
 				token += str[pos];
@@ -59,7 +59,7 @@ URLON = {
 				var res = [];
 				while (1) {
 					res.push(parse());
-					if (str[pos] !== '&') {
+					if (str[pos] !== ',') {
 						break;
 					}
 					pos += 1;
