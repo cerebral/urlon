@@ -1,36 +1,31 @@
 URLON = {
 	stringify: function (input) {
-		var str = '';
-
+		// Array
 		if (input instanceof Array) {
-			str += '#';
+			var str = '#';
 			for (var i = 0; i < input.length; ++i) {
 				str += URLON.stringify(input[i]) + '&';
 			}
-			str = str.substring(0, str.length - 1);
+			return str.substring(0, str.length - 1);
 		}
 		// Object
 		if (typeof input === 'object') {
-			str += '_';
+			var str = '_';
 			for (var key in input) {
 				str += key + URLON.stringify(input[key]) + '&';
 			}
-			str = str.substring(0, str.length - 1);
+			return str.substring(0, str.length - 1);
 		}
 		// Boolean
-		else if (input === true || input === false) {
-			str += ':' + input;
+		if (input === true || input === false) {
+			return ':' + input;
 		}
 		// Number
-		else if (typeof input === 'number') {
-			str += ':' + input;
+		if (typeof input === 'number') {
+			return ':' + input;
 		}
 		// String
-		else {
-			str += '=' + input.toString();
-		}
-
-		return str;
+		return '=' + input.toString();
 	},
 
 	parse: function (str) {
