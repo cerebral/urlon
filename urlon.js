@@ -11,11 +11,11 @@ URLON = {
 			}
 			// Array
 			if (input instanceof Array) {
-				var str = '@';
+				var str = '';
 				for (var i = 0; i < input.length; ++i) {
-					str += stringify(input[i]) + '&';
+					str += '@' + stringify(input[i]);
 				}
-				return str.substring(0, str.length - 1) + ';';
+				return str + ';';
 			}
 			// Object
 			if (typeof input === 'object') {
