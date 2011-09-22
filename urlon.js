@@ -60,7 +60,7 @@ URLON = {
 				if (value === 'true' || value === 'false') {
 					return Boolean(value);
 				}
-				value = parseInt(value, 10);
+				value = parseFloat(value);
 				return isNaN(value) ? null : value;
 			}
 			// Array
