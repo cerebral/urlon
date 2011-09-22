@@ -1,7 +1,7 @@
 URLON = {
 	stringify: function (input) {
 		function encodeString (str) {
-			return encodeURI(str.replace(/([=:&#_,])/g, '$1$1'));
+			return encodeURI(str.replace(/([=:&@_,])/g, '$1$1'));
 		}
 		
 		function stringify (input) {
@@ -11,7 +11,7 @@ URLON = {
 			}
 			// Array
 			if (input instanceof Array) {
-				var str = '#';
+				var str = '@';
 				for (var i = 0; i < input.length; ++i) {
 					str += stringify(input[i]) + ',';
 				}
@@ -39,7 +39,7 @@ URLON = {
 		function read() {
 			var token = '';
 			for (; pos !== str.length; ++pos) {
-				if (str[pos].match(/[=:&#_,]/)) {
+				if (str[pos].match(/[=:&@_,]/)) {
 					if (str[pos + 1] === str[pos]) {
 						pos += 1;
 					} else {
@@ -68,7 +68,7 @@ URLON = {
 				return isNaN(value) ? null : value;
 			}
 			// Array
-			if (type === '#') {
+			if (type === '@') {
 				var res = [];
 				while (1) {
 					res.push(parse());
