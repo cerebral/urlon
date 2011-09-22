@@ -57,13 +57,11 @@ URLON = {
 			// Number or Boolean
 			if (type === ':') {
 				var value = read();
-				if (value === 'true') {
-					return true;
-				} else if (value === 'false') {
-					return false;
-				} else {
-					return parseInt(value, 10);
+				if (value === 'true' || value === 'false') {
+					return Boolean(value);
 				}
+				value = parseInt(value, 10);
+				return isNaN(value) ? null : value;
 			}
 			// Array
 			else if (type === '#') {
