@@ -1,9 +1,9 @@
 URLON = {
 	stringify: function (input) {
 		function encodeString (str) {
-			return encodeURI(str.replace(/([=:&@_,])/g, '$1$1'));
+			return encodeURI(str.replace(/([=:&@_;\/])/g, '/$1'));
 		}
-		
+
 		function stringify (input) {
 			// Number or Boolean or Null
 			if (typeof input === 'number' || input === true || input === false || input === null) {
@@ -13,9 +13,9 @@ URLON = {
 			if (input instanceof Array) {
 				var str = '@';
 				for (var i = 0; i < input.length; ++i) {
-					str += stringify(input[i]) + ',';
+					str += stringify(input[i]) + '&';
 				}
-				return str.substring(0, str.length - 1);
+				return str.substring(0, str.length - 1) + ';';
 			}
 			// Object
 			if (typeof input === 'object') {
@@ -23,15 +23,15 @@ URLON = {
 				for (var key in input) {
 					str += encodeString(key) + stringify(input[key]) + '&';
 				}
-				return str.substring(0, str.length - 1);
+				return str.substring(0, str.length - 1) + ';';
 			}
 			// String
 			return '=' + encodeString(input.toString());
 		}
-		
-		return stringify(input);
+
+		return stringify(input).replace(/;+$/g, '');
 	},
-	
+
 	parse: function (str) {
 		var pos = 0;
 		str = decodeURI(str);
@@ -39,12 +39,13 @@ URLON = {
 		function read() {
 			var token = '';
 			for (; pos !== str.length; ++pos) {
-				if (str[pos].match(/[=:&@_,]/)) {
-					if (str[pos + 1] === str[pos]) {
-						pos += 1;
-					} else {
+				if (str[pos] === '/') {
+					pos += 1;
+					if (pos === str.length) {
 						break;
 					}
+				} else if (str[pos].match(/[=:&@_;]/)) {
+					break;
 				}
 				token += str[pos];
 			}
@@ -72,7 +73,8 @@ URLON = {
 				var res = [];
 				while (1) {
 					res.push(parse());
-					if (str[pos] !== ',') {
+					if (pos >= str.length || str[pos] === ';') {
+						pos += 1;
 						break;
 					}
 					pos += 1;
@@ -85,7 +87,8 @@ URLON = {
 				while (1) {
 					var name = read();
 					res[name] = parse();
-					if (str[pos] !== '&') {
+					if (pos >= str.length || str[pos] === ';') {
+						pos += 1;
 						break;
 					}
 					pos += 1;
