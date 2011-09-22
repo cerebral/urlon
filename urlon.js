@@ -28,6 +28,8 @@ URLON = {
 			// String
 			return '=' + encodeString(input.toString());
 		}
+		
+		return stringify(input);
 	},
 	
 	parse: function (str) {
