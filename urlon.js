@@ -17,7 +17,7 @@ URLON = {
 			return str.substring(0, str.length - 1);
 		}
 		// Number or Boolean
-		if (typeof input === 'number' | input === true || input === false) {
+		if (typeof input === 'number' || input === true || input === false) {
 			return ':' + input;
 		}
 		// String
