@@ -17,7 +17,7 @@ URLON.stringify('{"table":{"achievement":{"column":"instance","ascending":true}}
 // Output:      '_table_achievement_column=instance&ascending:true'
 ```
 
-## JSON / VJON Comparison
+## JSON / URLON Comparison
 
 ### Object
 An object starts with an underscore ```_``` and all the fields are separated by ampersand ```&```. It makes it feel really url'ish.
