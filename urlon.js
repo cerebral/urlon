@@ -42,7 +42,7 @@ URLON = {
 				if (str[pos].match(/[=:&#_,]/)) {
 					if (str[pos + 1] === str[pos]) {
 						pos += 1;
-					} eles {
+					} else {
 						break;
 					}
 				}
