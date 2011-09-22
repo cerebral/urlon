@@ -92,7 +92,7 @@ URLON = {
 			}
 			// Error
 			else {
-				throw 'Unknown char ' + type;
+				throw 'Unexpected char ' + type;
 			}
 		}
 
