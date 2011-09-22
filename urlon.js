@@ -64,7 +64,7 @@ URLON = {
 				return isNaN(value) ? null : value;
 			}
 			// Array
-			else if (type === '#') {
+			if (type === '#') {
 				var res = [];
 				while (1) {
 					res.push(parse());
@@ -76,7 +76,7 @@ URLON = {
 				return res;
 			}
 			// Object
-			else if (type === '_') {
+			if (type === '_') {
 				var res = {};
 				while (1) {
 					var name = read();
@@ -89,9 +89,7 @@ URLON = {
 				return res;
 			}
 			// Error
-			else {
-				throw 'Unexpected char ' + type;
-			}
+			throw 'Unexpected char ' + type;
 		}
 
 		return parse();
