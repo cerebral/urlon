@@ -1,4 +1,3 @@
-
 /* Different Methods for Cycle Detection 
 
   http://jsperf.com/object-cycle-detection/3
@@ -22,16 +21,16 @@ var CycleDetection = {
 		function detect (obj) {
 			if (typeof obj === 'object') {
 				if (seenObjects.indexOf(obj) !== -1) {
-					return false;
+					return true;
 				}
 				seenObjects.push(obj);
 				for (var key in obj) {
-					if (obj.hasOwnProperty(key) && !detect(obj[key])) {
-						return false;
+					if (obj.hasOwnProperty(key) && detect(obj[key])) {
+						return true;
 					}
 				}
 			}
-			return true;
+			return false;
 		}
 			
 		return detect(obj);
@@ -44,17 +43,17 @@ var CycleDetection = {
 		function detect (obj) {
 			if (typeof obj === 'object') {
 				if (mark in obj) {
-					return false;
+					return true;
 				}
 				obj[mark] = true;
 				seenObjects.push(obj);
 				for (var key in obj) {
-					if (obj.hasOwnProperty(key) && !detect(obj[key])) {
-						return false;
+					if (obj.hasOwnProperty(key) && detect(obj[key])) {
+						return true;
 					}
 				}
 			}
-			return true;
+			return false;
 		}
 
 		var result = detect(obj);
@@ -73,9 +72,9 @@ var CycleDetection = {
 		}
 		try {
 			JSON.stringify(obj);
-			return true;
-		} catch (e) {
 			return false;
+		} catch (e) {
+			return true;
 		}
 	}
 };
