@@ -102,3 +102,8 @@ URLON = {
 		return parse();
 	}
 };
+
+if (typeof exports !== 'undefined') {
+	exports.stringify = URLON.stringify;
+	exports.parse = URLON.parse;
+}
