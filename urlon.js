@@ -1,45 +1,50 @@
 URLON = {
 	stringify: function (input) {
-		var str = '';
-
-		if (input instanceof Array) {
-			str += '#';
-			for (var i = 0; i < input.length; ++i) {
-				str += URLON.stringify(input[i]) + '&';
-			}
-			str = str.substring(0, str.length - 1);
-		}
-		// Object
-		if (typeof input === 'object') {
-			str += '_';
-			for (var key in input) {
-				str += key + URLON.stringify(input[key]) + '&';
-			}
-			str = str.substring(0, str.length - 1);
-		}
-		// Boolean
-		else if (input === true || input === false) {
-			str += ':' + input;
-		}
-		// Number
-		else if (typeof input === 'number') {
-			str += ':' + input;
-		}
-		// String
-		else {
-			str += '=' + input.toString();
+		function encodeString (str) {
+			return encodeURI(str.replace(/([=:&@_;\/])/g, '/$1'));
 		}
 
-		return str;
+		function stringify (input) {
+			// Number or Boolean or Null
+			if (typeof input === 'number' || input === true || input === false || input === null) {
+				return ':' + input;
+			}
+			// Array
+			if (input instanceof Array) {
+				var str = '';
+				for (var i = 0; i < input.length; ++i) {
+					str += '@' + stringify(input[i]);
+				}
+				return str + ';';
+			}
+			// Object
+			if (typeof input === 'object') {
+				var str = '_';
+				for (var key in input) {
+					str += encodeString(key) + stringify(input[key]) + '&';
+				}
+				return str.substring(0, str.length - 1) + ';';
+			}
+			// String
+			return '=' + encodeString(input.toString());
+		}
+
+		return stringify(input).replace(/;+$/g, '');
 	},
 
 	parse: function (str) {
 		var pos = 0;
+		str = decodeURI(str);
 
 		function read() {
 			var token = '';
 			for (; pos !== str.length; ++pos) {
-				if (str[pos].match(/[=:&#_]/)) {
+				if (str[pos] === '/') {
+					pos += 1;
+					if (pos === str.length) {
+						break;
+					}
+				} else if (str[pos].match(/[=:&@_;]/)) {
 					break;
 				}
 				token += str[pos];
@@ -57,20 +62,19 @@ URLON = {
 			// Number or Boolean
 			if (type === ':') {
 				var value = read();
-				if (value === 'true') {
-					return true;
-				} else if (value === 'false') {
-					return false;
-				} else {
-					return parseInt(value, 10);
+				if (value === 'true' || value === 'false') {
+					return Boolean(value);
 				}
+				value = parseFloat(value);
+				return isNaN(value) ? null : value;
 			}
 			// Array
-			else if (type === '#') {
+			if (type === '@') {
 				var res = [];
 				while (1) {
 					res.push(parse());
-					if (str[pos] !== '&') {
+					if (pos >= str.length || str[pos] === ';') {
+						pos += 1;
 						break;
 					}
 					pos += 1;
@@ -78,12 +82,13 @@ URLON = {
 				return res;
 			}
 			// Object
-			else if (type === '_') {
+			if (type === '_') {
 				var res = {};
 				while (1) {
 					var name = read();
 					res[name] = parse();
-					if (str[pos] !== '&') {
+					if (pos >= str.length || str[pos] === ';') {
+						pos += 1;
 						break;
 					}
 					pos += 1;
@@ -91,9 +96,7 @@ URLON = {
 				return res;
 			}
 			// Error
-			else {
-				throw 'Unknown char ' + type;
-			}
+			throw 'Unexpected char ' + type;
 		}
 
 		return parse();
