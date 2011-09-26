@@ -20,7 +20,7 @@ URLON = {
 			// Object
 			if (typeof input === 'object') {
 				var res = [];
-				for (var i = 0; i < input.length; ++i) {
+				for (var key in input) {
 					res.push(encodeString(key) + stringify(input[key]));
 				}
 				return '_' + res.join('&') + ';';
