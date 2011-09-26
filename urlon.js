@@ -15,7 +15,7 @@ URLON = {
 				for (var i = 0; i < input.length; ++i) {
 					res.push(stringify(input[i]));
 				}
-				return '@' + res.join('@') + ';';
+				return '@' + res.join('&') + ';';
 			}
 			// Object
 			if (typeof input === 'object') {
