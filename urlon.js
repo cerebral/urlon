@@ -71,30 +71,28 @@ URLON = {
 			// Array
 			if (type === '@') {
 				var res = [];
-				pos -= 1;
 				while (1) {
-					pos += 1;
 					if (pos >= str.length || str[pos] === ';') {
-						pos += 1;
 						break;
 					}
+					pos += 1;
 					res.push(parse());
 				}
+				pos += 1;
 				return res;
 			}
 			// Object
 			if (type === '_') {
 				var res = {};
-				pos -= 1;
 				while (1) {
-					pos += 1;
 					if (pos >= str.length || str[pos] === ';') {
-						pos += 1;
 						break;
 					}
+					pos += 1;
 					var name = read();
 					res[name] = parse();
 				}
+				pos += 1;
 				return res;
 			}
 			// Error
