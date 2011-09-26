@@ -71,10 +71,12 @@ URLON = {
 			// Array
 			if (type === '@') {
 				var res = [];
+				pos -= 1;
 				while (1) {
 					if (pos >= str.length || str[pos] === ';') {
 						break;
 					}
+					pos += 1;
 					res.push(parse());
 				}
 				pos += 1;
@@ -83,10 +85,12 @@ URLON = {
 			// Object
 			if (type === '_') {
 				var res = {};
+				pos -= 1;
 				while (1) {
 					if (pos >= str.length || str[pos] === ';') {
 						break;
 					}
+					pos += 1;
 					var name = read();
 					res[name] = parse();
 				}
