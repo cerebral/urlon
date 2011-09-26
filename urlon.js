@@ -11,19 +11,19 @@ URLON = {
 			}
 			// Array
 			if (input instanceof Array) {
-				var str = '';
+				var res = [];
 				for (var i = 0; i < input.length; ++i) {
-					str += '@' + stringify(input[i]);
+					res.push(stringify(input[i]));
 				}
-				return str + ';';
+				return '@' + res.join('@') + ';';
 			}
 			// Object
 			if (typeof input === 'object') {
-				var str = '_';
-				for (var key in input) {
-					str += encodeString(key) + stringify(input[key]) + '&';
+				var res = [];
+				for (var i = 0; i < input.length; ++i) {
+					res.push(encodeString(key) + stringify(input[key]));
 				}
-				return str.substring(0, str.length - 1) + ';';
+				return '_' + res.join('&') + ';';
 			}
 			// String
 			return '=' + encodeString(input.toString());
@@ -71,27 +71,29 @@ URLON = {
 			// Array
 			if (type === '@') {
 				var res = [];
+				pos -= 1;
 				while (1) {
-					res.push(parse());
+					pos += 1;
 					if (pos >= str.length || str[pos] === ';') {
 						pos += 1;
 						break;
 					}
-					pos += 1;
+					res.push(parse());
 				}
 				return res;
 			}
 			// Object
 			if (type === '_') {
 				var res = {};
+				pos -= 1;
 				while (1) {
-					var name = read();
-					res[name] = parse();
+					pos += 1;
 					if (pos >= str.length || str[pos] === ';') {
 						pos += 1;
 						break;
 					}
-					pos += 1;
+					var name = read();
+					res[name] = parse();
 				}
 				return res;
 			}
