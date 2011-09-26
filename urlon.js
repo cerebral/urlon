@@ -71,13 +71,15 @@ URLON = {
 			// Array
 			if (type === '@') {
 				var res = [];
-				pos -= 1;
+				if (pos >= str.length || str[pos] === ';') {
+					return res;
+				}
 				while (1) {
+					res.push(parse());
 					if (pos >= str.length || str[pos] === ';') {
 						break;
 					}
 					pos += 1;
-					res.push(parse());
 				}
 				pos += 1;
 				return res;
@@ -85,14 +87,16 @@ URLON = {
 			// Object
 			if (type === '_') {
 				var res = {};
-				pos -= 1;
+				if (pos >= str.length || str[pos] === ';') {
+					return res;
+				}
 				while (1) {
+					var name = read();
+					res[name] = parse();
 					if (pos >= str.length || str[pos] === ';') {
 						break;
 					}
 					pos += 1;
-					var name = read();
-					res[name] = parse();
 				}
 				pos += 1;
 				return res;
