@@ -75,7 +75,6 @@ URLON = {
 					if (pos >= str.length || str[pos] === ';') {
 						break;
 					}
-					pos += 1;
 					res.push(parse());
 				}
 				pos += 1;
@@ -88,7 +87,6 @@ URLON = {
 					if (pos >= str.length || str[pos] === ';') {
 						break;
 					}
-					pos += 1;
 					var name = read();
 					res[name] = parse();
 				}
