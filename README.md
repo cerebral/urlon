@@ -18,7 +18,7 @@ var URLON = require('URLON');
 
 ### Webpage
 ```
-<script src="https://raw.github.com/vjeux/URLON/master/urlon.js"></script>
+<script src="https://raw.github.com/vjeux/URLON/master/src/urlon.js"></script>
 ```
 
 ## Usage
