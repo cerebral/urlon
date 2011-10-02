@@ -16,9 +16,9 @@ beforeEach ->
 
 describe "URLON", ->
 	test = (obj) ->
-		name = (JSON.stringify obj)
-		if name.length > 40
-			name = name[0...37] + '...'
+		name = (JSON.stringify obj) || "undefined"
+		if name.length > 100
+			name = name[0...97] + '...'
 		it name, ->
 			expect().toBeWorking obj
 
