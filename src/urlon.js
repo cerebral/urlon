@@ -11,19 +11,19 @@ URLON = {
 			}
 			// Array
 			if (input instanceof Array) {
-				var str = '';
+				var res = [];
 				for (var i = 0; i < input.length; ++i) {
-					str += '@' + stringify(input[i]);
+					res.push(stringify(input[i]));
 				}
-				return str + ';';
+				return '@' + res.join('&') + ';';
 			}
 			// Object
 			if (typeof input === 'object') {
-				var str = '_';
+				var res = [];
 				for (var key in input) {
-					str += encodeString(key) + stringify(input[key]) + '&';
+					res.push(encodeString(key) + stringify(input[key]));
 				}
-				return str.substring(0, str.length - 1) + ';';
+				return '_' + res.join('&') + ';';
 			}
 			// String
 			return '=' + encodeString(input.toString());
@@ -42,6 +42,7 @@ URLON = {
 				if (str[pos] === '/') {
 					pos += 1;
 					if (pos === str.length) {
+						token += ';';
 						break;
 					}
 				} else if (str[pos].match(/[=:&@_;]/)) {
@@ -62,8 +63,11 @@ URLON = {
 			// Number or Boolean
 			if (type === ':') {
 				var value = read();
-				if (value === 'true' || value === 'false') {
-					return Boolean(value);
+				if (value === 'true') {
+					return true;
+				}
+				if (value === 'false') {
+					return false;
 				}
 				value = parseFloat(value);
 				return isNaN(value) ? null : value;
@@ -71,28 +75,38 @@ URLON = {
 			// Array
 			if (type === '@') {
 				var res = [];
-				while (1) {
-					res.push(parse());
+				loop: {
 					if (pos >= str.length || str[pos] === ';') {
-						pos += 1;
-						break;
+						break loop;
 					}
-					pos += 1;
+					while (1) {
+						res.push(parse());
+						if (pos >= str.length || str[pos] === ';') {
+							break loop;
+						}
+						pos += 1;
+					}
 				}
+				pos += 1;
 				return res;
 			}
 			// Object
 			if (type === '_') {
 				var res = {};
-				while (1) {
-					var name = read();
-					res[name] = parse();
+				loop: {
 					if (pos >= str.length || str[pos] === ';') {
-						pos += 1;
-						break;
+						break loop;
 					}
-					pos += 1;
+					while (1) {
+						var name = read();
+						res[name] = parse();
+						if (pos >= str.length || str[pos] === ';') {
+							break loop;
+						}
+						pos += 1;
+					}
 				}
+				pos += 1;
 				return res;
 			}
 			// Error

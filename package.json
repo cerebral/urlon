@@ -9,8 +9,8 @@
 		"email": "vjeuxx@gmail.com",
 		"url": "http://blog.vjeux.com/"
 	},
-	"files": ["urlon.js"],
-	"main": "urlon.js",
+	"files": ["src/urlon.js"],
+	"main": "src/urlon.js",
 	"repository": {
 		"type": "git",
 		"url": "http://github.com/vjeux/URLON.git"
