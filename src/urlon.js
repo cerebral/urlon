@@ -39,22 +39,22 @@ URLON = {
 		function read() {
 			var token = '';
 			for (; pos !== str.length; ++pos) {
-				if (str[pos] === '/') {
+				if (str.charAt(pos) === '/') {
 					pos += 1;
 					if (pos === str.length) {
 						token += ';';
 						break;
 					}
-				} else if (str[pos].match(/[=:&@_;]/)) {
+				} else if (str.charAt(pos).match(/[=:&@_;]/)) {
 					break;
 				}
-				token += str[pos];
+				token += str.charAt(pos);
 			}
 			return token;
 		}
 
 		function parse() {
-			var type = str[pos++];
+			var type = str.charAt(pos++);
 
 			// String
 			if (type === '=') {
@@ -76,12 +76,12 @@ URLON = {
 			if (type === '@') {
 				var res = [];
 				loop: {
-					if (pos >= str.length || str[pos] === ';') {
+					if (pos >= str.length || str.charAt(pos) === ';') {
 						break loop;
 					}
 					while (1) {
 						res.push(parse());
-						if (pos >= str.length || str[pos] === ';') {
+						if (pos >= str.length || str.charAt(pos) === ';') {
 							break loop;
 						}
 						pos += 1;
@@ -94,13 +94,13 @@ URLON = {
 			if (type === '_') {
 				var res = {};
 				loop: {
-					if (pos >= str.length || str[pos] === ';') {
+					if (pos >= str.length || str.charAt(pos) === ';') {
 						break loop;
 					}
 					while (1) {
 						var name = read();
 						res[name] = parse();
-						if (pos >= str.length || str[pos] === ';') {
+						if (pos >= str.length || str.charAt(pos) === ';') {
 							break loop;
 						}
 						pos += 1;
