@@ -12,12 +12,12 @@ URLON is on [NPM] (http://search.npmjs.org/#/URLON).
 ```
 npm install URLON
 ```
-```
+```javascript
 var URLON = require('URLON');
 ```
 
 ### Webpage
-```
+```html
 <script src="https://raw.github.com/vjeux/URLON/master/src/urlon.js"></script>
 ```
 
@@ -25,7 +25,7 @@ var URLON = require('URLON');
 
 ### stringify
 
-```
+```javascript
 URLON.stringify('{"table":{"achievement":{"column":"instance","ascending":true}}}')
 
 // Output:      '_table_achievement_column=instance&ascending:true'
@@ -33,7 +33,7 @@ URLON.stringify('{"table":{"achievement":{"column":"instance","ascending":true}}
 
 ### parse
 
-```
+```javascript
 URLON.parse('_table_achievement_column=instance&ascending:true')
 
 // Output:  {"table":{"achievement":{"column":"instance","ascending":true}}}
