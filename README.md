@@ -1,3 +1,4 @@
+[![build status](https://secure.travis-ci.org/vjeux/URLON.png)](http://travis-ci.org/vjeux/URLON)
 # URL Object Notation
 
 An Object Notation like JSON but for URLs. [Read the full explanation on my blog](http://blog.vjeux.com/2011/javascript/urlon-url-object-notation.html).
