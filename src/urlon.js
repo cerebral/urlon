@@ -1,4 +1,4 @@
-URLON = {
+var URLON = {
 	stringify: function (input) {
 		function encodeString (str) {
 			return encodeURI(str.replace(/([=:&@_;\/])/g, '/$1'));
