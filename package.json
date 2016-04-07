@@ -1,6 +1,6 @@
 {
-	"name": "URLON",
-	"version": "1.0.1",
+	"name": "urlon",
+	"version": "2.0.1",
 	"description": "URL Object Notation. JSON-like encoding for URLs",
 	"keywords": ["urlon", "json", "notation", "url"],
 	"homepage": "http://blog.vjeux.com/2011/javascript/urlon-url-object-notation.html",
