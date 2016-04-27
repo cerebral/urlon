@@ -3,7 +3,8 @@
   "version": "2.0.1",
   "description": "URL Object Notation. JSON-like encoding for URLs",
   "scripts": {
-    "test": "jasmine"
+    "test": "jasmine",
+    "coverage": "nyc report --reporter=lcov --reporter=text npm test"
   },
   "keywords": [
     "urlon",
@@ -27,6 +28,12 @@
   },
   "devDependencies": {
     "coffee-script": "^1.10.0",
-    "jasmine": "^2.4.1"
+    "jasmine": "^2.4.1",
+    "nyc": "^6.4.0"
+  },
+  "nyc": {
+    "exclude": [
+      "spec"
+    ]
   }
 }
