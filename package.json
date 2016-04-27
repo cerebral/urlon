@@ -1,18 +1,32 @@
 {
-	"name": "urlon",
-	"version": "2.0.1",
-	"description": "URL Object Notation. JSON-like encoding for URLs",
-	"keywords": ["urlon", "json", "notation", "url"],
-	"homepage": "http://blog.vjeux.com/2011/javascript/urlon-url-object-notation.html",
-	"author": {
-		"name": "Vjeux",
-		"email": "vjeuxx@gmail.com",
-		"url": "http://blog.vjeux.com/"
-	},
-	"files": ["src/urlon.js"],
-	"main": "src/urlon.js",
-	"repository": {
-		"type": "git",
-		"url": "http://github.com/vjeux/URLON.git"
-	}
+  "name": "urlon",
+  "version": "2.0.1",
+  "description": "URL Object Notation. JSON-like encoding for URLs",
+  "scripts": {
+    "test": "jasmine"
+  },
+  "keywords": [
+    "urlon",
+    "json",
+    "notation",
+    "url"
+  ],
+  "homepage": "http://blog.vjeux.com/2011/javascript/urlon-url-object-notation.html",
+  "author": {
+    "name": "Vjeux",
+    "email": "vjeuxx@gmail.com",
+    "url": "http://blog.vjeux.com/"
+  },
+  "files": [
+    "lib/urlon.js"
+  ],
+  "main": "lib/urlon.js",
+  "repository": {
+    "type": "git",
+    "url": "http://github.com/vjeux/URLON.git"
+  },
+  "devDependencies": {
+    "coffee-script": "^1.10.0",
+    "jasmine": "^2.4.1"
+  }
 }
