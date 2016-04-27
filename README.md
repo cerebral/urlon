@@ -7,18 +7,30 @@ An Object Notation like JSON but for URLs. [Read the full explanation on my blog
 You first need to enable URLON.
 
 ### NPM
-URLON is on [NPM] (http://search.npmjs.org/#/URLON).
+URLON is on [NPM] (http://search.npmjs.org/#/urlon).
 
 ```
-npm install URLON
+npm install urlon
 ```
 ```javascript
-var URLON = require('URLON');
+var URLON = require('urlon');
 ```
 
 ### Webpage
 ```html
-<script src="https://raw.github.com/vjeux/URLON/master/src/urlon.js"></script>
+<script src="https://npmcdn.com/urlon@2.1.0/dist/urlon.umd.js"></script>
+<script>
+  urlon // urlon.stringify() or urlon.parse()
+</script>
+```
+
+or
+
+```html
+<script src="https://npmcdn.com/urlon@2.1.0/dist/URLON.umd.js"></script>
+<script>
+  URLON // URLON.stringify() or URLON.parse()
+</script>
 ```
 
 ## Usage
@@ -38,4 +50,3 @@ URLON.parse('_table_achievement_column=instance&ascending:true')
 
 // Output:  {"table":{"achievement":{"column":"instance","ascending":true}}}
 ```
-
