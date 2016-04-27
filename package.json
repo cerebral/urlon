@@ -1,10 +1,12 @@
 {
   "name": "urlon",
-  "version": "2.0.1",
+  "version": "2.1.0",
   "description": "URL Object Notation. JSON-like encoding for URLs",
   "scripts": {
     "test": "jasmine",
-    "coverage": "nyc report --reporter=lcov --reporter=text npm test"
+    "coverage": "nyc report --reporter=lcov --reporter=text npm test",
+    "dist": "umd -c urlon < lib/urlon.js > dist/urlon.umd.js && umd -c URLON < lib/urlon.js > dist/URLON.umd.js",
+    "prepublish": "npm run test && npm run dist"
   },
   "keywords": [
     "urlon",
@@ -19,7 +21,9 @@
     "url": "http://blog.vjeux.com/"
   },
   "files": [
-    "lib/urlon.js"
+    "lib/urlon.js",
+    "dist/urlon.umd.js",
+    "dist/URLON.umd.js"
   ],
   "main": "lib/urlon.js",
   "repository": {
@@ -29,7 +33,8 @@
   "devDependencies": {
     "coffee-script": "^1.10.0",
     "jasmine": "^2.4.1",
-    "nyc": "^6.4.0"
+    "nyc": "^6.4.0",
+    "umd": "^3.0.1"
   },
   "nyc": {
     "exclude": [
