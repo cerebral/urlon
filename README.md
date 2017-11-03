@@ -18,7 +18,7 @@ var URLON = require('urlon');
 
 ### Webpage
 ```html
-<script src="https://npmcdn.com/urlon@2.1.0/dist/urlon.umd.js"></script>
+<script src="https://unpkg.com/urlon@2.1.0/dist/urlon.umd.js"></script>
 <script>
   urlon // urlon.stringify() or urlon.parse()
 </script>
@@ -27,7 +27,7 @@ var URLON = require('urlon');
 or
 
 ```html
-<script src="https://npmcdn.com/urlon@2.1.0/dist/URLON.umd.js"></script>
+<script src="https://unpkg.com/urlon@2.1.0/dist/URLON.umd.js"></script>
 <script>
   URLON // URLON.stringify() or URLON.parse()
 </script>
