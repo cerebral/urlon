@@ -85,6 +85,8 @@ describe "URLON", ->
     test [[[[[0]]]]]
     test [[[[[0],0]],0]]
     test [0, [0, [0, 0]]]
+    test [null]
+    test [undefined]
 
   describe "Object", ->
     test {}
@@ -113,7 +115,8 @@ describe "URLON", ->
         obj: {
           nested_num: 50,
           undef: undefined,
-          alpha: "abc"
+          alpha: "abc",
+          nullable: null
         },
         arr: [1, 7, 2]
       }
