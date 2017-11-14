@@ -1,12 +1,12 @@
 {
   "name": "urlon",
-  "version": "2.1.0",
+  "version": "3.0.0",
   "description": "URL Object Notation. JSON-like encoding for URLs",
   "scripts": {
     "pretest": "standard lib/*",
     "test": "jasmine",
-    "coverage": "nyc report --reporter=lcov --reporter=text npm test",
-    "dist": "umd -c urlon < lib/urlon.js > dist/urlon.umd.js && umd -c URLON < lib/urlon.js > dist/URLON.umd.js",
+    "coverage": "nyc --reporter=lcov --reporter=text npm run test",
+    "dist": "umd -c urlon < lib/urlon.js > dist/urlon.umd.js",
     "prepublish": "npm run test && npm run dist"
   },
   "keywords": [
@@ -15,21 +15,23 @@
     "notation",
     "url"
   ],
-  "homepage": "http://blog.vjeux.com/2011/javascript/urlon-url-object-notation.html",
+  "homepage": "https://github.com/cerebral/urlon",
   "author": {
     "name": "Vjeux",
     "email": "vjeuxx@gmail.com",
     "url": "http://blog.vjeux.com/"
   },
+  "contributors": [
+    "Aleksey Guryanov <gurianov@gmail.com>"
+  ],
   "files": [
     "lib/urlon.js",
-    "dist/urlon.umd.js",
-    "dist/URLON.umd.js"
+    "dist/urlon.umd.js"
   ],
   "main": "lib/urlon.js",
   "repository": {
     "type": "git",
-    "url": "http://github.com/vjeux/URLON.git"
+    "url": "https://github.com/cerebral/urlon.git"
   },
   "devDependencies": {
     "coffee-script": "^1.10.0",
