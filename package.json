@@ -1,6 +1,6 @@
 {
   "name": "urlon",
-  "version": "3.0.0",
+  "version": "3.0.1",
   "description": "URL Object Notation. JSON-like encoding for URLs",
   "scripts": {
     "pretest": "standard lib/*",

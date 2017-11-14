@@ -25,8 +25,6 @@ var URLON = require('urlon');
 </script>
 ```
 
-```
-
 ## Usage
 
 ### stringify
