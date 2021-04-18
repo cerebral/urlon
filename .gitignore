@@ -3,3 +3,4 @@ node_modules
 coverage
 dist/*
 !dist/.keep
+package-lock.json
