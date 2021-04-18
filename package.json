@@ -2,12 +2,13 @@
   "name": "urlon",
   "version": "3.0.1",
   "description": "URL Object Notation. JSON-like encoding for URLs",
+  "license": "MIT",
   "scripts": {
-    "pretest": "standard lib/*",
-    "test": "jasmine",
-    "coverage": "nyc --reporter=lcov --reporter=text npm run test",
+    "test": "jest",
+    "coverage": "jest --coverage",
     "dist": "umd -c urlon < lib/urlon.js > dist/urlon.umd.js",
-    "prepublish": "npm run test && npm run dist"
+    "lint": "eslint .",
+    "prepare": "husky install && npm run dist"
   },
   "keywords": [
     "urlon",
@@ -22,7 +23,7 @@
     "url": "http://blog.vjeux.com/"
   },
   "contributors": [
-    "Aleksey Guryanov <gurianov@gmail.com>"
+    "Aleksei Gurianov <gurianov@gmail.com>"
   ],
   "files": [
     "lib/urlon.js",
@@ -34,15 +35,25 @@
     "url": "https://github.com/cerebral/urlon.git"
   },
   "devDependencies": {
-    "coffee-script": "^1.10.0",
-    "jasmine": "^2.4.1",
-    "nyc": "^11.3.0",
-    "standard": "^10.0.3",
-    "umd": "^3.0.1"
+    "@commitlint/cli": "^12.1.1",
+    "@commitlint/config-conventional": "^12.1.1",
+    "cz-conventional-changelog": "^3.3.0",
+    "eslint": "^7.24.0",
+    "eslint-config-prettier": "^8.2.0",
+    "eslint-config-standard": "^16.0.2",
+    "eslint-plugin-import": "^2.22.1",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "eslint-plugin-promise": "^4.3.1",
+    "husky": "^6.0.0",
+    "jest": "^26.6.3",
+    "prettier": "^2.2.1",
+    "semantic-release": "^17.4.2",
+    "umd": "^3.0.3"
   },
-  "nyc": {
-    "exclude": [
-      "spec"
-    ]
+  "config": {
+    "commitizen": {
+      "path": "./node_modules/cz-conventional-changelog"
+    }
   }
 }
