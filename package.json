@@ -1,6 +1,6 @@
 {
   "name": "urlon",
-  "version": "3.0.1",
+  "version": "0.0.0-semantically-released",
   "description": "URL Object Notation. JSON-like encoding for URLs",
   "license": "MIT",
   "scripts": {
