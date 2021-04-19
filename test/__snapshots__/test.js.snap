@@ -1,135 +1,115 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Array [[[[[0],0]],0]] 1`] = `"@@@@@:0;&:0;;&:0"`;
+exports[`URLON Array [[[[[0],0]],0]] 1`] = `"@@@@@:0;&:0;;&:0"`;
 
-exports[`Array [[[[[0],0]],0]] 2`] = `"@@@@@:0;&:0;;&:0"`;
+exports[`URLON Array [[[[[0]]]]] 1`] = `"@@@@@:0"`;
 
-exports[`Array [[[[[0]]]]] 1`] = `"@@@@@:0"`;
+exports[`URLON Array [[0]] 1`] = `"@@:0"`;
 
-exports[`Array [[[[[0]]]]] 2`] = `"@@@@@:0"`;
+exports[`URLON Array [] 1`] = `"@"`;
 
-exports[`Array [[0]] 1`] = `"@@:0"`;
+exports[`URLON Array [0,[0,[0,0]]] 1`] = `"@:0&@:0&@:0&:0"`;
 
-exports[`Array [[0]] 2`] = `"@@:0"`;
+exports[`URLON Array [null] 1`] = `"@:null"`;
 
-exports[`Array [] 1`] = `"@"`;
-
-exports[`Array [] 2`] = `"@"`;
-
-exports[`Array [0,[0,[0,0]]] 1`] = `"@:0&@:0&@:0&:0"`;
-
-exports[`Array [0,[0,[0,0]]] 2`] = `"@:0&@:0&@:0&:0"`;
-
-exports[`Array [null] 1`] = `"@:null"`;
-
-exports[`Array [null] 2`] = `"@:null"`;
-
-exports[`Array [null] 3`] = `"@:null"`;
-
-exports[`Array [null] 4`] = `"@:null"`;
-
-exports[`Complex ["JSON makeTest Pattern pass1",{"object with 1 member":["array with 1 element"]},{},[],-42,true,f... 1`] = `"@=JSON%20makeTest%20Pattern%20pass1&$object%20with%201%20member@=array%20with%201%20element;;&$;&@;&:-42&:true&:false&:null&$integer:1234567890&real:-9876.54321&e:1.23456789e-13&E:1.23456789e+34&:2.3456789012e+76&zero:0&one:1&space=%20&quote=%22&backslash=%5C&controls=%08%0C%0A%0D%09&slash=//%20/&%20//&alpha=abcdefghijklmnopqrstuvwyz&ALPHA=ABCDEFGHIJKLMNOPQRSTUVWYZ&digit=0123456789&0123456789=digit&special=%601~!@#$%25%5E/&*()_+-=%7B':%5B,%5D%7D%7C/;.%3C//%3E?&hex=%C4%A3%E4%95%A7%E8%A6%AB%EC%B7%AF%EA%AF%8D%EE%BD%8A&true:true&false:false&null:null&array@;&object$;&address=50%20St.%20James%20Street&url=http:////www.JSON.org//&comment=////%20//*%20%3C!--%20--&#%20--%20--%3E%20*//=%20&%20s%20p%20a%20c%20e%20d%20@:1&:2&:3&:4&:5&:6&:7;&compact@:1&:2&:3&:4&:5&:6&:7;&jsontext=%7B%22object%20with%201%20member%22:%5B%22array%20with%201%20element%22%5D%7D&quotes=/&#34/;%20%22%20%2522%200x22%20034%20/&#x22/;&//%5C%22%EC%AB%BE%EB%AA%BE%EA%AE%98%EF%B3%9E%EB%B3%9A%EE%BD%8A%08%0C%0A%0D%09%601~!/@#/$%25%5E&*()_+-/=%5B%5D%7B%7D%7C;/:',.//%3C%3E?=A%20key%20can%20be%20any%20string;&:0.5&:98.6&:99.44&:1066&:10&:1&:0.1&:1&:2&:2&=rosebud"`;
-
-exports[`Complex [{},{}] 1`] = `"@$;&$"`;
-
-exports[`Complex {"foo":[2,{"bar":[4,{"baz":[6,{"deep enough":7}]}]}]} 1`] = `"$foo@:2&$bar@:4&$baz@:6&$deep%20enough:7"`;
-
-exports[`Complex {"num":1,"alpha":"abc","ignore":"me","change":"to a function","toUpper":true,"obj":{"nested_num":... 1`] = `"$num:1&alpha=abc&ignore=me&change=to%20a%20function&toUpper:true&obj$nested_num:50&alpha=abc&nullable:null;&arr@:1&:7&:2"`;
-
-exports[`Complex {"type":"Node","matrix":{"m11":1,"m12":0,"m21":0,"m22":1,"dx":0,"dy":0},"children":[{"type":"Text... 1`] = `"$type=Node&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:30&dy:415;&children@;&fillStyle=#0089ff&text=Created%20with%20Zwibbler.com&fontName=Arial&fontSize:12;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:467&dy:23;&children@;&fillStyle=#000000&text=is%20processed&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:419&dy:1;&children@;&fillStyle=#000000&text=After%20the%20empty%20object&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:248&dy:24;&children@;&fillStyle=#000000&text=is%20processed&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:243&dy:1;&children@;&fillStyle=#000000&text=After%20a%20Rect&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:30&dy:28;&children@;&fillStyle=#000000&text=is%20processed&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:25&dy:5;&children@;&fillStyle=#000000&text=After%20a%20Point&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:33&dy:358;&children@;&fillStyle=#000000&text=object.&fontName=FG%20Virgil&fontSize:15;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:32&dy:341;&children@;&fillStyle=#000000&text=the%20path%20to%20a%20completed&fontName=FG%20Virgil&fontSize:15;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:32&dy:323;&children@;&fillStyle=#000000&text=Gray%20nodes%20represent&fontName=FG%20Virgil&fontSize:15;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:504&dy:375;&children@;&fillStyle=#000000&text=height&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:487&dy:295;&children@;&fillStyle=#000000&text=width&fontName=FG%20Virgil&fontSize:20;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:296&dy:-5;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:246&startY:273&closed:false&segments@$type:2&x:231&y:296;;&shadow:false;;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:-1.0052223548588493&m12:0&m21:0&m22:0.9694181823431851&dx:616.8428551273748&dy:154.213227992421;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:103&startY:192&closed:false&segments@$type:2&x:89&y:225;;&shadow:false;;&$type=PathNode&matrix$m11:-0.6630394213564543&m12:0&m21:0&m22:0.5236476835782672&dx:565.5201948628471&dy:371.5686591257294;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=PathNode&matrix$m11:-1.475090930376591&m12:0&m21:0&m22:1.2306765694828008&dx:700.1381032855618&dy:133.20628077515605;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:126.25&startY:127.50445838342671&closed:true&segments@$type:3&x:146.01190476190476&y:147.5936260519611&x1:146.01190476190476&y1:127.50445838342671&r@:-0.1750196823850274&:-0.05804965365678072&:-0.3536788672208786&:0.053223272785544395;;&$type:3&x:126.25&y:167.6827937204955&x1:146.01190476190476&y1:167.6827937204955&r@:-0.32906053867191076&:-0.11536165233701468&:0.35579121299088&:0.38731588050723076;;&$type:3&x:108&y:147&x1:106.48809523809524&y1:167.6827937204955&r@:0.08825046103447676&:0.011088204570114613&:0.43411328736692667&:-0.1330692209303379;;&$type:3&x:126.25&y:127.50445838342671&x1:106.48809523809524&y1:127.50445838342671&r@:0.42778260353952646&:0.24726040940731764&:0.3631806019693613&:0.05325550492852926;;;&shadow:false;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:543&dy:225;&children@;&fillStyle=#000000&text=Y&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:559&dy:144;&children@;&fillStyle=#000000&text=x&fontName=FG%20Virgil&fontSize:20;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:464&dy:-3;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:103&startY:192&closed:false&segments@$type:2&x:89&y:225;;&shadow:false;;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:526.2705783334583&dy:222.70238095238096;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:464&dy:-3;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:76&startY:111&closed:false&segments@$type:2&x:92&y:143;;&shadow:false;;&$type=PathNode&matrix$m11:1.3368391918073623&m12:0&m21:0&m22:1.3058369941348298&dx:397.4634652643233&dy:-29.230987805439646;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:126.25&startY:127.50445838342671&closed:true&segments@$type:3&x:146.01190476190476&y:147.5936260519611&x1:146.01190476190476&y1:127.50445838342671&r@:-0.1750196823850274&:-0.05804965365678072&:-0.3536788672208786&:0.053223272785544395;;&$type:3&x:126.25&y:167.6827937204955&x1:146.01190476190476&y1:167.6827937204955&r@:-0.32906053867191076&:-0.11536165233701468&:0.35579121299088&:0.38731588050723076;;&$type:3&x:108&y:147&x1:106.48809523809524&y1:167.6827937204955&r@:0.08825046103447676&:0.011088204570114613&:0.43411328736692667&:-0.1330692209303379;;&$type:3&x:126.25&y:127.50445838342671&x1:106.48809523809524&y1:127.50445838342671&r@:0.42778260353952646&:0.24726040940731764&:0.3631806019693613&:0.05325550492852926;;;&shadow:false;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:505.2705783334583&dy:61.70238095238095;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:290&dy:373;&children@;&fillStyle=#000000&text=height&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:273&dy:293;&children@;&fillStyle=#000000&text=width&fontName=FG%20Virgil&fontSize:20;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:82&dy:-7;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:246&startY:273&closed:false&segments@$type:2&x:231&y:296;;&shadow:false;;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:-1.0052223548588493&m12:0&m21:0&m22:0.9694181823431851&dx:402.8428551273748&dy:152.213227992421;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:103&startY:192&closed:false&segments@$type:2&x:89&y:225;;&shadow:false;;&$type=PathNode&matrix$m11:-0.6630394213564543&m12:0&m21:0&m22:0.5236476835782672&dx:351.52019486284706&dy:369.5686591257294;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=PathNode&matrix$m11:-1.4512941300747246&m12:0&m21:0&m22:1.2306765694828008&dx:483.6192163567064&dy:131.20628077515607;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:126.25&startY:127.50445838342671&closed:true&segments@$type:3&x:146.01190476190476&y:147.5936260519611&x1:146.01190476190476&y1:127.50445838342671&r@:-0.1750196823850274&:-0.05804965365678072&:-0.3536788672208786&:0.053223272785544395;;&$type:3&x:126.25&y:167.6827937204955&x1:146.01190476190476&y1:167.6827937204955&r@:-0.32906053867191076&:-0.11536165233701468&:0.35579121299088&:0.38731588050723076;;&$type:3&x:108&y:147&x1:106.48809523809524&y1:167.6827937204955&r@:0.08825046103447676&:0.011088204570114613&:0.43411328736692667&:-0.1330692209303379;;&$type:3&x:126.25&y:127.50445838342671&x1:106.48809523809524&y1:127.50445838342671&r@:0.42778260353952646&:0.24726040940731764&:0.3631806019693613&:0.05325550492852926;;;&shadow:false;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:329&dy:223;&children@;&fillStyle=#000000&text=Y&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:345&dy:142;&children@;&fillStyle=#000000&text=x&fontName=FG%20Virgil&fontSize:20;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:250&dy:-5;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:103&startY:192&closed:false&segments@$type:2&x:89&y:225;;&shadow:false;;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:312.2705783334583&dy:220.70238095238096;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:250&dy:-5;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:76&startY:111&closed:false&segments@$type:2&x:92&y:143;;&shadow:false;;&$type=PathNode&matrix$m11:1.3368391918073623&m12:0&m21:0&m22:1.3058369941348298&dx:183.46346526432328&dy:-31.230987805439646;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:126.25&startY:127.50445838342671&closed:true&segments@$type:3&x:146.01190476190476&y:147.5936260519611&x1:146.01190476190476&y1:127.50445838342671&r@:-0.1750196823850274&:-0.05804965365678072&:-0.3536788672208786&:0.053223272785544395;;&$type:3&x:126.25&y:167.6827937204955&x1:146.01190476190476&y1:167.6827937204955&r@:-0.32906053867191076&:-0.11536165233701468&:0.35579121299088&:0.38731588050723076;;&$type:3&x:108&y:147&x1:106.48809523809524&y1:167.6827937204955&r@:0.08825046103447676&:0.011088204570114613&:0.43411328736692667&:-0.1330692209303379;;&$type:3&x:126.25&y:127.50445838342671&x1:106.48809523809524&y1:127.50445838342671&r@:0.42778260353952646&:0.24726040940731764&:0.3631806019693613&:0.05325550492852926;;;&shadow:false;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:291.2705783334583&dy:59.70238095238095;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:96&dy:228;&children@;&fillStyle=#000000&text=Y&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:112&dy:147;&children@;&fillStyle=#000000&text=x&fontName=FG%20Virgil&fontSize:20;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:17&dy:0;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:103&startY:192&closed:false&segments@$type:2&x:89&y:225;;&shadow:false;;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:79.27057833345825&dy:225.70238095238096;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:17&dy:0;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:76&startY:111&closed:false&segments@$type:2&x:92&y:143;;&shadow:false;;&$type=PathNode&matrix$m11:1.3368391918073623&m12:0&m21:0&m22:1.3058369941348298&dx:-49.536534735676724&dy:-26.230987805439646;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:126.25&startY:127.50445838342671&closed:true&segments@$type:3&x:146.01190476190476&y:147.5936260519611&x1:146.01190476190476&y1:127.50445838342671&r@:-0.1750196823850274&:-0.05804965365678072&:-0.3536788672208786&:0.053223272785544395;;&$type:3&x:126.25&y:167.6827937204955&x1:146.01190476190476&y1:167.6827937204955&r@:-0.32906053867191076&:-0.11536165233701468&:0.35579121299088&:0.38731588050723076;;&$type:3&x:108&y:147&x1:106.48809523809524&y1:167.6827937204955&r@:0.08825046103447676&:0.011088204570114613&:0.43411328736692667&:-0.1330692209303379;;&$type:3&x:126.25&y:127.50445838342671&x1:106.48809523809524&y1:127.50445838342671&r@:0.42778260353952646&:0.24726040940731764&:0.3631806019693613&:0.05325550492852926;;;&shadow:false;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:58.270578333458246&dy:64.70238095238095;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false"`;
-
-exports[`Numbers -42 1`] = `":-42"`;
-
-exports[`Numbers -9876.54321 1`] = `":-9876.54321"`;
-
-exports[`Numbers 0 1`] = `":0"`;
-
-exports[`Numbers 0.1 1`] = `":0.1"`;
-
-exports[`Numbers 0.5 1`] = `":0.5"`;
-
-exports[`Numbers 1 1`] = `":1"`;
-
-exports[`Numbers 1 2`] = `":1"`;
-
-exports[`Numbers 1 3`] = `":1"`;
-
-exports[`Numbers 1.23456789e-13 1`] = `":1.23456789e-13"`;
-
-exports[`Numbers 2 1`] = `":2"`;
-
-exports[`Numbers 2 2`] = `":2"`;
-
-exports[`Numbers 2.3456789012e+76 1`] = `":2.3456789012e+76"`;
-
-exports[`Numbers 10 1`] = `":10"`;
-
-exports[`Numbers 98.6 1`] = `":98.6"`;
-
-exports[`Numbers 99.44 1`] = `":99.44"`;
-
-exports[`Numbers 1066 1`] = `":1066"`;
-
-exports[`Numbers 1234567890 1`] = `":1234567890"`;
-
-exports[`Object {"":""} 1`] = `"$="`;
-
-exports[`Object {"":""} 2`] = `"$="`;
-
-exports[`Object {"a":{"b":1},"c":"x"} 1`] = `"$a$b:1;&c=x"`;
-
-exports[`Object {"a":{"b":1},"c":"x"} 2`] = `"$a$b:1;&c=x"`;
-
-exports[`Object {} 1`] = `"$"`;
-
-exports[`Object {} 2`] = `"$"`;
-
-exports[`Strings " " 1`] = `"=%20"`;
-
-exports[`Strings "" 1`] = `"="`;
-
-exports[`Strings "# -- --> */" 1`] = `"=#%20--%20--%3E%20*//"`;
-
-exports[`Strings "&" 1`] = `"=/&"`;
-
-exports[`Strings "&#34; \\" %22 0x22 034 &#x22;" 1`] = `"=/&#34/;%20%22%20%2522%200x22%20034%20/&#x22/"`;
-
-exports[`Strings "/ & /" 1`] = `"=//%20/&%20//"`;
-
-exports[`Strings "/" 1`] = `"=//"`;
-
-exports[`Strings "// /* <!-- --" 1`] = `"=////%20//*%20%3C!--%20--"`;
-
-exports[`Strings "/\\\\\\"쫾몾ꮘﳞ볚\\b\\f\\n\\r\\t\`1~!@#$%^&*()_+-=[]{}|;:',./<>?" 1`] = `"=//%5C%22%EC%AB%BE%EB%AA%BE%EA%AE%98%EF%B3%9E%EB%B3%9A%EE%BD%8A%08%0C%0A%0D%09%601~!@#$%25%5E/&*()_+-=%5B%5D%7B%7D%7C/;:',.//%3C%3E?"`;
-
-exports[`Strings ";" 1`] = `"=/"`;
-
-exports[`Strings "@" 1`] = `"=@"`;
-
-exports[`Strings "@:0&@:0&@:0&:0" 1`] = `"=@:0/&@:0/&@:0/&:0"`;
-
-exports[`Strings "\\"" 1`] = `"=%22"`;
-
-exports[`Strings "\\\\" 1`] = `"=%5C"`;
-
-exports[`Strings "\\b\\f\\n\\r\\t" 1`] = `"=%08%0C%0A%0D%09"`;
-
-exports[`Strings "\`1~!@#$%^&*()_+-={':[,]}|;.</>?" 1`] = `"=%601~!@#$%25%5E/&*()_+-=%7B':%5B,%5D%7D%7C/;.%3C//%3E?"`;
-
-exports[`Strings "{\\"object with 1 member\\":[\\"array with 1 element\\"]}" 1`] = `"=%7B%22object%20with%201%20member%22:%5B%22array%20with%201%20element%22%5D%7D"`;
-
-exports[`Strings "|" 1`] = `"=%7C"`;
-
-exports[`Strings "0123456789" 1`] = `"=0123456789"`;
-
-exports[`Strings "ABCDEFGHIJKLMNOPQRSTUVWYZ" 1`] = `"=ABCDEFGHIJKLMNOPQRSTUVWYZ"`;
-
-exports[`Strings "abcdefghijklmnopqrstuvwyz" 1`] = `"=abcdefghijklmnopqrstuvwyz"`;
-
-exports[`Strings "ģ䕧覫췯ꯍ" 1`] = `"=%C4%A3%E4%95%A7%E8%A6%AB%EC%B7%AF%EA%AF%8D%EE%BD%8A"`;
+exports[`URLON Array [null] 2`] = `"@:null"`;
 
 exports[`URLON Booleans false 1`] = `":false"`;
 
 exports[`URLON Booleans null 1`] = `":null"`;
 
 exports[`URLON Booleans true 1`] = `":true"`;
+
+exports[`URLON Complex ["JSON makeTest Pattern pass1",{"object with 1 member":["array with 1 element"]},{},[],-42,true,f... 1`] = `"@=JSON%20makeTest%20Pattern%20pass1&$object%20with%201%20member@=array%20with%201%20element;;&$;&@;&:-42&:true&:false&:null&$integer:1234567890&real:-9876.54321&e:1.23456789e-13&E:1.23456789e+34&:2.3456789012e+76&zero:0&one:1&space=%20&quote=%22&backslash=%5C&controls=%08%0C%0A%0D%09&slash=//%20/&%20//&alpha=abcdefghijklmnopqrstuvwyz&ALPHA=ABCDEFGHIJKLMNOPQRSTUVWYZ&digit=0123456789&0123456789=digit&special=%601~!@#$%25%5E/&*()_+-=%7B':%5B,%5D%7D%7C/;.%3C//%3E?&hex=%C4%A3%E4%95%A7%E8%A6%AB%EC%B7%AF%EA%AF%8D%EE%BD%8A&true:true&false:false&null:null&array@;&object$;&address=50%20St.%20James%20Street&url=http:////www.JSON.org//&comment=////%20//*%20%3C!--%20--&#%20--%20--%3E%20*//=%20&%20s%20p%20a%20c%20e%20d%20@:1&:2&:3&:4&:5&:6&:7;&compact@:1&:2&:3&:4&:5&:6&:7;&jsontext=%7B%22object%20with%201%20member%22:%5B%22array%20with%201%20element%22%5D%7D&quotes=/&#34/;%20%22%20%2522%200x22%20034%20/&#x22/;&//%5C%22%EC%AB%BE%EB%AA%BE%EA%AE%98%EF%B3%9E%EB%B3%9A%EE%BD%8A%08%0C%0A%0D%09%601~!/@#/$%25%5E&*()_+-/=%5B%5D%7B%7D%7C;/:',.//%3C%3E?=A%20key%20can%20be%20any%20string;&:0.5&:98.6&:99.44&:1066&:10&:1&:0.1&:1&:2&:2&=rosebud"`;
+
+exports[`URLON Complex [{},{}] 1`] = `"@$;&$"`;
+
+exports[`URLON Complex {"foo":[2,{"bar":[4,{"baz":[6,{"deep enough":7}]}]}]} 1`] = `"$foo@:2&$bar@:4&$baz@:6&$deep%20enough:7"`;
+
+exports[`URLON Complex {"num":1,"alpha":"abc","ignore":"me","change":"to a function","toUpper":true,"obj":{"nested_num":... 1`] = `"$num:1&alpha=abc&ignore=me&change=to%20a%20function&toUpper:true&obj$nested_num:50&alpha=abc&nullable:null;&arr@:1&:7&:2"`;
+
+exports[`URLON Complex {"type":"Node","matrix":{"m11":1,"m12":0,"m21":0,"m22":1,"dx":0,"dy":0},"children":[{"type":"Text... 1`] = `"$type=Node&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:30&dy:415;&children@;&fillStyle=#0089ff&text=Created%20with%20Zwibbler.com&fontName=Arial&fontSize:12;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:467&dy:23;&children@;&fillStyle=#000000&text=is%20processed&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:419&dy:1;&children@;&fillStyle=#000000&text=After%20the%20empty%20object&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:248&dy:24;&children@;&fillStyle=#000000&text=is%20processed&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:243&dy:1;&children@;&fillStyle=#000000&text=After%20a%20Rect&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:30&dy:28;&children@;&fillStyle=#000000&text=is%20processed&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:25&dy:5;&children@;&fillStyle=#000000&text=After%20a%20Point&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:33&dy:358;&children@;&fillStyle=#000000&text=object.&fontName=FG%20Virgil&fontSize:15;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:32&dy:341;&children@;&fillStyle=#000000&text=the%20path%20to%20a%20completed&fontName=FG%20Virgil&fontSize:15;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:32&dy:323;&children@;&fillStyle=#000000&text=Gray%20nodes%20represent&fontName=FG%20Virgil&fontSize:15;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:504&dy:375;&children@;&fillStyle=#000000&text=height&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:487&dy:295;&children@;&fillStyle=#000000&text=width&fontName=FG%20Virgil&fontSize:20;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:296&dy:-5;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:246&startY:273&closed:false&segments@$type:2&x:231&y:296;;&shadow:false;;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:-1.0052223548588493&m12:0&m21:0&m22:0.9694181823431851&dx:616.8428551273748&dy:154.213227992421;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:103&startY:192&closed:false&segments@$type:2&x:89&y:225;;&shadow:false;;&$type=PathNode&matrix$m11:-0.6630394213564543&m12:0&m21:0&m22:0.5236476835782672&dx:565.5201948628471&dy:371.5686591257294;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=PathNode&matrix$m11:-1.475090930376591&m12:0&m21:0&m22:1.2306765694828008&dx:700.1381032855618&dy:133.20628077515605;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:126.25&startY:127.50445838342671&closed:true&segments@$type:3&x:146.01190476190476&y:147.5936260519611&x1:146.01190476190476&y1:127.50445838342671&r@:-0.1750196823850274&:-0.05804965365678072&:-0.3536788672208786&:0.053223272785544395;;&$type:3&x:126.25&y:167.6827937204955&x1:146.01190476190476&y1:167.6827937204955&r@:-0.32906053867191076&:-0.11536165233701468&:0.35579121299088&:0.38731588050723076;;&$type:3&x:108&y:147&x1:106.48809523809524&y1:167.6827937204955&r@:0.08825046103447676&:0.011088204570114613&:0.43411328736692667&:-0.1330692209303379;;&$type:3&x:126.25&y:127.50445838342671&x1:106.48809523809524&y1:127.50445838342671&r@:0.42778260353952646&:0.24726040940731764&:0.3631806019693613&:0.05325550492852926;;;&shadow:false;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:543&dy:225;&children@;&fillStyle=#000000&text=Y&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:559&dy:144;&children@;&fillStyle=#000000&text=x&fontName=FG%20Virgil&fontSize:20;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:464&dy:-3;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:103&startY:192&closed:false&segments@$type:2&x:89&y:225;;&shadow:false;;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:526.2705783334583&dy:222.70238095238096;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:464&dy:-3;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:76&startY:111&closed:false&segments@$type:2&x:92&y:143;;&shadow:false;;&$type=PathNode&matrix$m11:1.3368391918073623&m12:0&m21:0&m22:1.3058369941348298&dx:397.4634652643233&dy:-29.230987805439646;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:126.25&startY:127.50445838342671&closed:true&segments@$type:3&x:146.01190476190476&y:147.5936260519611&x1:146.01190476190476&y1:127.50445838342671&r@:-0.1750196823850274&:-0.05804965365678072&:-0.3536788672208786&:0.053223272785544395;;&$type:3&x:126.25&y:167.6827937204955&x1:146.01190476190476&y1:167.6827937204955&r@:-0.32906053867191076&:-0.11536165233701468&:0.35579121299088&:0.38731588050723076;;&$type:3&x:108&y:147&x1:106.48809523809524&y1:167.6827937204955&r@:0.08825046103447676&:0.011088204570114613&:0.43411328736692667&:-0.1330692209303379;;&$type:3&x:126.25&y:127.50445838342671&x1:106.48809523809524&y1:127.50445838342671&r@:0.42778260353952646&:0.24726040940731764&:0.3631806019693613&:0.05325550492852926;;;&shadow:false;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:505.2705783334583&dy:61.70238095238095;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:290&dy:373;&children@;&fillStyle=#000000&text=height&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:273&dy:293;&children@;&fillStyle=#000000&text=width&fontName=FG%20Virgil&fontSize:20;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:82&dy:-7;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:246&startY:273&closed:false&segments@$type:2&x:231&y:296;;&shadow:false;;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:-1.0052223548588493&m12:0&m21:0&m22:0.9694181823431851&dx:402.8428551273748&dy:152.213227992421;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:103&startY:192&closed:false&segments@$type:2&x:89&y:225;;&shadow:false;;&$type=PathNode&matrix$m11:-0.6630394213564543&m12:0&m21:0&m22:0.5236476835782672&dx:351.52019486284706&dy:369.5686591257294;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=PathNode&matrix$m11:-1.4512941300747246&m12:0&m21:0&m22:1.2306765694828008&dx:483.6192163567064&dy:131.20628077515607;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:126.25&startY:127.50445838342671&closed:true&segments@$type:3&x:146.01190476190476&y:147.5936260519611&x1:146.01190476190476&y1:127.50445838342671&r@:-0.1750196823850274&:-0.05804965365678072&:-0.3536788672208786&:0.053223272785544395;;&$type:3&x:126.25&y:167.6827937204955&x1:146.01190476190476&y1:167.6827937204955&r@:-0.32906053867191076&:-0.11536165233701468&:0.35579121299088&:0.38731588050723076;;&$type:3&x:108&y:147&x1:106.48809523809524&y1:167.6827937204955&r@:0.08825046103447676&:0.011088204570114613&:0.43411328736692667&:-0.1330692209303379;;&$type:3&x:126.25&y:127.50445838342671&x1:106.48809523809524&y1:127.50445838342671&r@:0.42778260353952646&:0.24726040940731764&:0.3631806019693613&:0.05325550492852926;;;&shadow:false;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:329&dy:223;&children@;&fillStyle=#000000&text=Y&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:345&dy:142;&children@;&fillStyle=#000000&text=x&fontName=FG%20Virgil&fontSize:20;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:250&dy:-5;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:103&startY:192&closed:false&segments@$type:2&x:89&y:225;;&shadow:false;;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:312.2705783334583&dy:220.70238095238096;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:250&dy:-5;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:76&startY:111&closed:false&segments@$type:2&x:92&y:143;;&shadow:false;;&$type=PathNode&matrix$m11:1.3368391918073623&m12:0&m21:0&m22:1.3058369941348298&dx:183.46346526432328&dy:-31.230987805439646;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:126.25&startY:127.50445838342671&closed:true&segments@$type:3&x:146.01190476190476&y:147.5936260519611&x1:146.01190476190476&y1:127.50445838342671&r@:-0.1750196823850274&:-0.05804965365678072&:-0.3536788672208786&:0.053223272785544395;;&$type:3&x:126.25&y:167.6827937204955&x1:146.01190476190476&y1:167.6827937204955&r@:-0.32906053867191076&:-0.11536165233701468&:0.35579121299088&:0.38731588050723076;;&$type:3&x:108&y:147&x1:106.48809523809524&y1:167.6827937204955&r@:0.08825046103447676&:0.011088204570114613&:0.43411328736692667&:-0.1330692209303379;;&$type:3&x:126.25&y:127.50445838342671&x1:106.48809523809524&y1:127.50445838342671&r@:0.42778260353952646&:0.24726040940731764&:0.3631806019693613&:0.05325550492852926;;;&shadow:false;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:291.2705783334583&dy:59.70238095238095;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:96&dy:228;&children@;&fillStyle=#000000&text=Y&fontName=FG%20Virgil&fontSize:20;&$type=TextNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:112&dy:147;&children@;&fillStyle=#000000&text=x&fontName=FG%20Virgil&fontSize:20;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:17&dy:0;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:103&startY:192&closed:false&segments@$type:2&x:89&y:225;;&shadow:false;;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:79.27057833345825&dy:225.70238095238096;&children@;&strokeStyle=#000000&fillStyle=#e1e1e1&lineWidth:4&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false;&$type=ArrowNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:0&dy:0;&children@;&arrowSize:10&path$type=PathNode&matrix$m11:1&m12:0&m21:0&m22:1&dx:17&dy:0;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:76&startY:111&closed:false&segments@$type:2&x:92&y:143;;&shadow:false;;&$type=PathNode&matrix$m11:1.3368391918073623&m12:0&m21:0&m22:1.3058369941348298&dx:-49.536534735676724&dy:-26.230987805439646;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:126.25&startY:127.50445838342671&closed:true&segments@$type:3&x:146.01190476190476&y:147.5936260519611&x1:146.01190476190476&y1:127.50445838342671&r@:-0.1750196823850274&:-0.05804965365678072&:-0.3536788672208786&:0.053223272785544395;;&$type:3&x:126.25&y:167.6827937204955&x1:146.01190476190476&y1:167.6827937204955&r@:-0.32906053867191076&:-0.11536165233701468&:0.35579121299088&:0.38731588050723076;;&$type:3&x:108&y:147&x1:106.48809523809524&y1:167.6827937204955&r@:0.08825046103447676&:0.011088204570114613&:0.43411328736692667&:-0.1330692209303379;;&$type:3&x:126.25&y:127.50445838342671&x1:106.48809523809524&y1:127.50445838342671&r@:0.42778260353952646&:0.24726040940731764&:0.3631806019693613&:0.05325550492852926;;;&shadow:false;&$type=PathNode&matrix$m11:0.4841400176012311&m12:0&m21:0&m22:0.48095238095238096&dx:58.270578333458246&dy:64.70238095238095;&children@;&strokeStyle=#000000&fillStyle=#ffffff&lineWidth:2&smoothness:0.3&sloppiness:0.5&startX:50&startY:0&closed:true&segments@$type:3&x:100&y:50&x1:100&y1:0&r@:-0.3779207859188318&:0.07996635790914297&:-0.47163885831832886&:-0.07100312784314156;;&$type:3&x:50&y:100&x1:100&y1:100&r@:0.24857700895518064&:0.030472169630229473&:0.49844827968627214&:0.13260168116539717;;&$type:3&x:0&y:50&x1:0&y1:100&r@:0.1751830680295825&:-0.18606301862746477&:-0.4092112798243761&:-0.4790717279538512;;&$type:3&x:50&y:0&x1:0&y1:0&r@:0.37117584701627493&:0.3612578883767128&:0.0462839687243104&:-0.1564063960686326;;;&shadow:false"`;
+
+exports[`URLON Numbers -42 1`] = `":-42"`;
+
+exports[`URLON Numbers -9876.54321 1`] = `":-9876.54321"`;
+
+exports[`URLON Numbers 0 1`] = `":0"`;
+
+exports[`URLON Numbers 0.1 1`] = `":0.1"`;
+
+exports[`URLON Numbers 0.5 1`] = `":0.5"`;
+
+exports[`URLON Numbers 1 1`] = `":1"`;
+
+exports[`URLON Numbers 1 2`] = `":1"`;
+
+exports[`URLON Numbers 1 3`] = `":1"`;
+
+exports[`URLON Numbers 1.23456789e-13 1`] = `":1.23456789e-13"`;
+
+exports[`URLON Numbers 2 1`] = `":2"`;
+
+exports[`URLON Numbers 2 2`] = `":2"`;
+
+exports[`URLON Numbers 2.3456789012e+76 1`] = `":2.3456789012e+76"`;
+
+exports[`URLON Numbers 10 1`] = `":10"`;
+
+exports[`URLON Numbers 98.6 1`] = `":98.6"`;
+
+exports[`URLON Numbers 99.44 1`] = `":99.44"`;
+
+exports[`URLON Numbers 1066 1`] = `":1066"`;
+
+exports[`URLON Numbers 1234567890 1`] = `":1234567890"`;
+
+exports[`URLON Object {"":""} 1`] = `"$="`;
+
+exports[`URLON Object {"a":{"b":1},"c":"x"} 1`] = `"$a$b:1;&c=x"`;
+
+exports[`URLON Object {} 1`] = `"$"`;
+
+exports[`URLON Strings " " 1`] = `"=%20"`;
+
+exports[`URLON Strings "" 1`] = `"="`;
+
+exports[`URLON Strings "# -- --> */" 1`] = `"=#%20--%20--%3E%20*//"`;
+
+exports[`URLON Strings "&" 1`] = `"=/&"`;
+
+exports[`URLON Strings "&#34; \\" %22 0x22 034 &#x22;" 1`] = `"=/&#34/;%20%22%20%2522%200x22%20034%20/&#x22/"`;
+
+exports[`URLON Strings "/ & /" 1`] = `"=//%20/&%20//"`;
+
+exports[`URLON Strings "/" 1`] = `"=//"`;
+
+exports[`URLON Strings "// /* <!-- --" 1`] = `"=////%20//*%20%3C!--%20--"`;
+
+exports[`URLON Strings "/\\\\\\"쫾몾ꮘﳞ볚\\b\\f\\n\\r\\t\`1~!@#$%^&*()_+-=[]{}|;:',./<>?" 1`] = `"=//%5C%22%EC%AB%BE%EB%AA%BE%EA%AE%98%EF%B3%9E%EB%B3%9A%EE%BD%8A%08%0C%0A%0D%09%601~!@#$%25%5E/&*()_+-=%5B%5D%7B%7D%7C/;:',.//%3C%3E?"`;
+
+exports[`URLON Strings ";" 1`] = `"=/"`;
+
+exports[`URLON Strings "@" 1`] = `"=@"`;
+
+exports[`URLON Strings "@:0&@:0&@:0&:0" 1`] = `"=@:0/&@:0/&@:0/&:0"`;
+
+exports[`URLON Strings "\\"" 1`] = `"=%22"`;
+
+exports[`URLON Strings "\\\\" 1`] = `"=%5C"`;
+
+exports[`URLON Strings "\\b\\f\\n\\r\\t" 1`] = `"=%08%0C%0A%0D%09"`;
+
+exports[`URLON Strings "\`1~!@#$%^&*()_+-={':[,]}|;.</>?" 1`] = `"=%601~!@#$%25%5E/&*()_+-=%7B':%5B,%5D%7D%7C/;.%3C//%3E?"`;
+
+exports[`URLON Strings "{\\"object with 1 member\\":[\\"array with 1 element\\"]}" 1`] = `"=%7B%22object%20with%201%20member%22:%5B%22array%20with%201%20element%22%5D%7D"`;
+
+exports[`URLON Strings "|" 1`] = `"=%7C"`;
+
+exports[`URLON Strings "0123456789" 1`] = `"=0123456789"`;
+
+exports[`URLON Strings "ABCDEFGHIJKLMNOPQRSTUVWYZ" 1`] = `"=ABCDEFGHIJKLMNOPQRSTUVWYZ"`;
+
+exports[`URLON Strings "abcdefghijklmnopqrstuvwyz" 1`] = `"=abcdefghijklmnopqrstuvwyz"`;
+
+exports[`URLON Strings "ģ䕧覫췯ꯍ" 1`] = `"=%C4%A3%E4%95%A7%E8%A6%AB%EC%B7%AF%EA%AF%8D%EE%BD%8A"`;
